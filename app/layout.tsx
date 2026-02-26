@@ -26,7 +26,7 @@ export default function RootLayout({
           className="
             w-full
             min-h-screen
-            bg-white
+            bg-[#F5F5F0]
             lg:w-97.5
             lg:h-211
             lg:min-h-0
