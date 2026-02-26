@@ -1,0 +1,51 @@
+"use client";
+
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+const navItems = [
+  { href: "/", label: "خانه" },
+  { href: "/search", label: "جستجو" },
+  { href: "/create", label: "ثبت آگهی" },
+  { href: "/chat", label: "چت" },
+  { href: "/profile", label: "پروفایل" },
+];
+
+export default function BottomNavigation({
+  mobile = false,
+}: {
+  mobile?: boolean;
+}) {
+  const pathname = usePathname();
+
+  return (
+    <nav
+      className={
+        mobile
+          ? "fixed bottom-0 left-0 right-0 border-t bg-white z-50"
+          : "w-full border-t bg-white"
+          
+      }
+    >
+      <div className="flex justify-around items-center h-14">
+        {navItems.map((item) => {
+          const isActive = pathname === item.href;
+
+          return (
+            <Link
+              key={item.href}
+              href={item.href}
+              className={`text-sm font-medium transition-colors ${
+                isActive
+                  ? "text-[#5D866C]"
+                  : "text-gray-400 hover:text-gray-600"
+              }`}
+            >
+              {item.label}
+            </Link>
+          );
+        })}
+      </div>
+    </nav>
+  );
+}
