@@ -4,8 +4,8 @@ import Header from "../components/Header";
 import BottomNavigation from "../components/MobileBottomNavigation";
 import "./globals.css";
 
-const MorabaFont = localFont({
-  src: "/fonts/Morabba/ttf/Morabba-Black.ttf",
+const FarhangFont = localFont({
+  src: "/fonts/Farhang/Farhang-DemiBold.ttf",
   display: "swap",
 });
 export const metadata: Metadata = {
@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="fa">
       <body
-        className={`bg-[#5D866C] lg:flex lg:items-center lg:justify-center min-h-screen ${MorabaFont.className}`}
+        className={`bg-[#5D866C] lg:flex lg:items-center lg:justify-center min-h-screen ${FarhangFont.className }`}
       >
         <div
           className="
