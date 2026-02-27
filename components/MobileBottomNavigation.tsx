@@ -5,8 +5,8 @@ import { usePathname } from "next/navigation";
 import localFont from "next/font/local";
 const navItems = [
   { href: "/", label: "خانه" },
-  { href: "/search", label: "جستجو" },
-  { href: "/create", label: "ثبت آگهی" },
+  { href: "/saved", label: "ذخیره شده ها" },
+  { href: "/create-ad", label: "ثبت آگهی" },
   { href: "/chat", label: "چت" },
   { href: "/profile", label: "پروفایل" },
 ];
