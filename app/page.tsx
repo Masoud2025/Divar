@@ -1,5 +1,11 @@
+import AdsList from "../components/AdsFeed";
+import CategorySlider from "../components/CategorySlider";
+
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center  font-sans "></div>
+    <div className="   ">
+      <CategorySlider/>
+      <AdsList/>
+    </div>
   );
 }

@@ -6,7 +6,6 @@ import Link from "next/link";
 export default function Header() {
   return (
     <header className="flex flex-row-reverse items-center justify-between px-6 py-3 border-b border-[#C2A68C]">
-      
       {/* Logo */}
       <Link href="/">
         <Image
@@ -41,7 +40,6 @@ export default function Header() {
           <Search size={16} className="text-white" />
         </button>
       </div>
-
     </header>
   );
 }
