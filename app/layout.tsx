@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import Header from "../components/Header";
 import BottomNavigation from "../components/MobileBottomNavigation";
 import "./globals.css";
 
@@ -38,7 +39,10 @@ export default function RootLayout({
           "
         >
           {/* Content */}
-          <div className="flex-1 overflow-y-auto pb-14 lg:pb-0">{children}</div>
+          <div className="flex-1 overflow-y-auto pb-14 lg:pb-0">
+            <Header />
+            {children}
+          </div>
 
           {/* Desktop Bottom Nav (inside frame) */}
           <div className="hidden lg:block">

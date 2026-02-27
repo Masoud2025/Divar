@@ -23,7 +23,7 @@ export default function BottomNavigation({
       className={
         mobile
           ? "fixed bottom-0 left-0 right-0 border-t bg-white z-50"
-          : "w-full border-t bg-white"
+          : "w-full border-t border-[#C2A68C]  bg-white"
           
       }
     >
